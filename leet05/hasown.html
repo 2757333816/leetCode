@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj = new Object({
+				i:123
+			})
+			obj.a = 1
+			obj.fn = function(){}
+			obj.c = {
+				d:5
+			}
+
+			
+			console.log(obj.hasOwnProperty('a'))//true
+			console.log(obj.hasOwnProperty('fn'))//true
+			console.log(obj.hasOwnProperty('c'))//true
+			console.log(obj.c.hasOwnProperty('d'))//true
+			console.log(obj.hasOwnProperty('d'))//false
+			console.log(obj.hasOwnProperty('i'))
+			for(let j in obj){
+				console.log("j",j)
+			}
+		</script>
+	</body>
+</html>
