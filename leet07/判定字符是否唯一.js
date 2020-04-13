@@ -1,0 +1,16 @@
+/**
+ * @param {string} astr
+ * @return {boolean}
+ * 实现一个算法，确定一个字符串 s 的所有字符是否全都不同。
+ * 示例 1：
+ * 输入: s = "leetcode"
+ * 输出: false 
+ */
+var isUnique = function(astr) {
+    for(let i = 0;i<astr.length;i++) {
+        if(astr.indexOf(astr[i]) != astr.lastIndexOf(astr[i])){
+            return false
+        }
+    }
+    return true
+};

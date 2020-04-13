@@ -6,9 +6,8 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var obj = new Object({
-				i:123
-			})
+			var obj = new Object()
+			Object.setPrototypeOf(obj,{i:123})
 			obj.a = 1
 			obj.fn = function(){}
 			obj.c = {
@@ -23,6 +22,9 @@
 			console.log(obj.hasOwnProperty('d'))//false
 			console.log(obj.hasOwnProperty('i'))
 			for(let j in obj){
+				if(obj.hasOwnProperty(j)){
+					console.log('j1',j)
+				}
 				console.log("j",j)
 			}
 		</script>
