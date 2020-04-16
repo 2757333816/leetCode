@@ -5,11 +5,11 @@
  * 返回重复了 N 次的那个元素。
  */
 var repeatedNTimes = function(A) {
-     for(let i=0; i<A.length-1;i++) {
-      for(let j = i+1; j<A.length; j++) {
-        if(A[i] === A[j]) {
-          return A[i];
-        }
-      }
-    }
+	for (let i = 0; i < A.length - 1; i++) {
+		for (let j = i + 1; j < A.length; j++) {
+			if (A[i] === A[j]) {
+				return A[i];
+			}
+		}
+	}
 };

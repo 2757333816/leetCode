@@ -8,12 +8,12 @@
  * @return {number}
  */
 var game = function(guess, answer) {
-    // 题目可理解为对比数组
-    let A = 0
-    for(let i = 0;i<answer.length;i++) {
-        if(guess[i] === answer[i]) {
-            A++
-        }
-    }
-    return A
+	// 题目可理解为对比数组
+	let A = 0
+	for (let i = 0; i < answer.length; i++) {
+		if (guess[i] === answer[i]) {
+			A++
+		}
+	}
+	return A
 };

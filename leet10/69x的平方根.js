@@ -9,10 +9,10 @@
  * @return {number}
  */
 var mySqrt = function(x) {
-    if (!x) return 0;//判断0
-    let ret = 1;
-    for (let i = 1; i <= x / i; i++) {
-        ret = i;
-    }
-    return ret;
+	if (!x) return 0; //判断0
+	let ret = 1;
+	for (let i = 1; i <= x / i; i++) {
+		ret = i;
+	}
+	return ret;
 };
