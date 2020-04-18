@@ -20,3 +20,18 @@ var sortArray = function(nums) {
 // 若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。
 // 若 a 等于 b，则返回 0。
 // 若 a 大于 b，则返回一个大于 0 的值。
+
+//冒泡排序
+// if (nums == null || nums.length < 2) {
+// 	return nums;
+// }
+// for (var i = nums.length - 1; i > 0; i--) {
+// 	for (j = 0; j < i; j++) {
+// 		if (nums[j] > nums[j + 1]) {
+// 			var temp = nums[j];
+// 			nums[j] = nums[j + 1];
+// 			nums[j + 1] = temp;
+// 		}
+// 	}
+// }
+// return nums;
