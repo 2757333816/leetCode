@@ -16,3 +16,8 @@ var sortArrayByParity = function(A) {
 	}
 	return B
 };
+
+push
+pop
+shift
+unshift

@@ -17,3 +17,17 @@ var game = function(guess, answer) {
 	}
 	return A
 };
+var game1 = (guess, answer)=>guess.filter((item,index)=>item===answer[index]).length
+
+var a = [1,24,4,5,6,12]
+a.filter(function(item){
+	// if(item>7){
+	// 	return true
+	// }else{
+	// 	return false
+	// }
+	return item>7
+})
+let b = a.filter((item)=>item>7)
+console.log(b)
+
